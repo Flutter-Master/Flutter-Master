@@ -1,0 +1,559 @@
+{
+	// PROVIDER SNIPPETS
+	"Provider of": {
+		"prefix": [
+			"provof",
+			"providerof"
+		],
+		"body": [
+			"Provider.of<$1>(context)$2;"
+		],
+		"description": "Provider.of<Something>(context);",
+	},
+
+
+	"Provider of Function": {
+		"prefix": [
+			"provfunction",
+			"providerfunction",
+		],
+		"body": [
+			"Provider.of<$1>(context,listen:false).$2();"
+		],
+		"description": "Provider.of<something>(context,listen:false).something();",
+	},
+
+  //THEMING
+	"Theme of": {
+		"prefix": [
+			"themeOf",
+		],
+		"body": [
+			" Theme.of(context).$1"
+		],
+		"description": " Theme.of(context).something,",
+	},
+
+	"Text Theme of": {
+		"prefix": [
+			"textTheme",
+		],
+		"body": [
+			"style: Theme.of(context).textTheme.$1,"
+		],
+		"description": "style: Theme.of(context).textTheme.something,",
+	},
+
+	//VARS
+	"Scroll Controller var": {
+		"prefix": [
+			"scrollController",
+		],
+		"body": [
+			"final ScrollController _scrollController = ScrollController();",
+			"",
+			"$1"
+		],
+		"description": "final ScrollController _scrollController = ScrollController();",
+	},
+
+	"Print to console": {
+		"prefix": [
+			"dprint",
+			"printdebug",
+		],
+
+		"body": [
+			"debugPrint('$1');",
+			"$2"
+		],
+		"description": "debugPrint('Something');",
+	},
+
+	"Form Key Var": {
+		"prefix": [
+			"formKey",
+			"keyForm",
+		],
+		"body": [
+			"final GlobalKey<FormState> _formKey = GlobalKey<FormState>();",
+			"",
+			"$1"
+		],
+		"description": "final GlobalKey<FormState> _formKey = GlobalKey<FormState>();",
+	},
+	"Scaffold Key Var": {
+		"prefix": [
+			"scaffoldKey",
+			"keyScaffold",
+		],
+		"body": [
+			"final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();",
+			"",
+			"$1"
+		],
+		"description": "final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();",
+	},
+	"Text Controller var": {
+		"prefix": [
+			"textEditingController",
+		],
+		"body": [
+			"final TextEditingController _$1Controller = TextEditingController();",
+			"",
+			"$2"
+		],
+		"description": "final TextEditingController _nameController = TextEditingController();",
+	},
+
+	"Future Delayed Var": {
+		"prefix": [
+			"futuredelayed",
+			"delayed"
+		],
+		"body": [
+			"await Future.delayed(Duration(milliseconds:250));",
+		],
+		"description": "await Future.delayed(Duration(milliseconds:250));",
+	},
+
+	"Duration Var": {
+		"prefix": [
+			"duration",
+		],
+		"body": [
+			"const Duration(milliseconds:$1);",
+		],
+		"description": "const Duration(milliseconds:$1);",
+	},
+
+	"Shared Prefrences Instance": {
+		"prefix": [
+			"sharedPrefs",
+			"prefsInstance",
+		],
+		"body": [
+			"final SharedPreferences _prefs = await SharedPreferences.getInstance();",
+			"$1",
+		],
+		"description": "final SharedPerefrences _prefs = await SharedPreferences.getInstance();",
+	},
+
+	//TRYCATCH
+	"Try Catch Block": {
+		"prefix": [
+			"trycatch",
+		],
+		"body": [
+			"try {",
+			"$1",
+			"}",
+			"",
+			"catch(e) {",
+			"debugPrint('Error: $e');",
+			"}",
+		],
+		"description": "TryCatch Block",
+	},
+
+	"Show snackbar": {
+		"prefix": [
+			"showsnackbar",
+		],
+		"body": [
+			"final SnackBar _snack = SnackBar(content: Text('$1'));",
+			"ScaffoldMessenger.of(context).removeCurrentSnackBar();",
+			"ScaffoldMessenger.of(context).showSnackBar(_snack);",
+			"",
+			"$2",
+		],
+		"description": "Shows snackbar with text",
+	},
+
+	"Show Date Picker Material": {
+		"prefix": [
+			"showDatePickerMaterial",
+		],
+		"body": [
+			"await showDatePicker(",
+			"\tcontext:context,",
+			"\tinitialDate: DateTime.now(),",
+			"\tfirstDate: DateTime(2020),",
+			"\tlastDate: DateTime(2025),",
+			");",
+		],
+		"description": "Show Date Picker Material",
+	},
+
+	"Show Bottom Sheet": {
+		"prefix": [
+			"showBottomSheet",
+		],
+		"body": [
+			"showModalBottomSheet(",
+			"\tcontext:context,",
+			"\tbackgroundColor:Theme.of(context).scaffoldColor,",
+			"\tenableDrag: true,",
+			"\tbuilder: (context) => $2",
+			");",
+		],
+		"description": "Show Bottom Sheet",
+	},
+	"Getter and setter for variable": {
+		"prefix": [
+			"getset",
+			"pvar",
+		],
+		"body": [
+			"${1:type} _${2:name} $3;",
+			"$1 get $2=> _$2;",
+			"void set ($1 value) {",
+			"\t_$2 = value;",
+			"}",
+		],
+		"description": "Getter and setter for variables",
+	},
+	"Material Navigation": {
+		"prefix": [
+			"materialNavigation",
+		],
+		"body": [
+			"Navigator.of(context).push(MaterialPageRoute(builder:(_)=>$1()));",
+			"",
+			"$2",
+		],
+		"description": "Navigator.of(context).push(MaterialPageRoute(builder:(_)=>$1()));",
+	},
+	//PROPERTIES
+	"Border Radius": {
+		"prefix": [
+			"borderRadius",
+		],
+		"body": [
+			"borderRadius: BorderRadius.circular(5),",
+			"$1",
+		],
+		"description": "borderRadius:BorderRadius.circular(5)",
+	},
+	"Main Axis Align Center": {
+		"prefix": [
+			"mainaligncenter",
+		],
+		"body": [
+			"mainAxisAlignment: MainAxisAlignment.center,",
+			"$1",
+		],
+		"description": "mainAxisAlignment: MainAxisAlignment.center",
+	},
+	"Cross Axis Align start": {
+		"prefix": [
+			"crossalignstart",
+		],
+		"body": [
+			"crossAxisAlignment: CrossAxisAlignment.start,",
+			"$1",
+		],
+		"description": "crossAxisAlignment: CrossAxisAlignment.start",
+	},
+	"Symmetric Padding": {
+		"prefix": [
+			"paddSymmetric",
+		],
+		"body": [
+			"padding: const EdgeInsets.symmetric(horizontal:15.0),",
+			"$1",
+		],
+		"description": "padding: const EdgeInsets.symmetric(horizontal:15.0),",
+	},
+
+	//WIDGETS
+	"Consumer Widget": {
+		"prefix": [
+			"consumer",
+		],
+		"body": [
+			"Consumer<$1>(",
+			"builder:(context, provider, child) {",
+			"return $2;",
+			"},",
+			"),",
+		],
+		"description": "Consumer Widget",
+	},
+	"SizedBox Width": {
+		"prefix": [
+			"sbw",
+		],
+		"body": [
+			"SizedBox(width:$1),",
+		],
+		"description": "SizedBox with width",
+	},
+	"SizedBox height": {
+		"prefix": [
+			"sbh",
+		],
+		"body": [
+			"SizedBox(height:$1),",
+		],
+		"description": "SizedBox With height",
+	},
+	"Text Widget ": {
+		"prefix": [
+			"text",
+		],
+		"body": [
+			"const Text('$1'),",
+		],
+		"description": "Text('Something'),",
+	},
+
+	"Expanded Widget": {
+		"prefix": [
+			"expanded",
+		],
+		"body": [
+			"const Expanded(",
+			"\tchild:$1",
+			"),",
+		],
+		"description": "Expanded(child: Something(),),",
+	},
+	"Container Widget": {
+		"prefix": [
+			"container",
+		],
+		"body": [
+			"Container(",
+			"\tdecoration:BoxDecoration(",
+			"\t\tborderRadius:BorderRadius.circular(5),",
+			"\t\tcolor: Theme.of(context).primaryColor",
+			"\t),",
+			"\tchild:$0",
+			"),",
+		],
+		"description": "Container with primary background color and border radius",
+	},
+
+	"Box Decoration ": {
+		"prefix": [
+			"boxDecoration",
+		],
+		"body": [
+			"\tdecoration:BoxDecoration(",
+			"\t\tborderRadius:BorderRadius.circular(5),",
+			"\t\tcolor: Theme.of(context).primaryColor,",
+			"\t),",
+		],
+		"description": "BoxDecoration(),",
+	},
+
+	"Decoration Image": {
+		"prefix": [
+			"decorationImage",
+		],
+		"body": [
+			"\timage:DecorationImage(",
+			"\t\timage:AssetImage('$1'),",
+			"\t\tfit: BoxFit.cover,",
+			"\t),",
+		],
+		"description": "DecorationImage(),",
+	},
+
+	"Gestuer Detector": {
+		"prefix": [
+			"gesture",
+		],
+		"body": [
+			"GestureDetector(",
+			"\tonTap:() {},",
+			"\tchild:$1",
+			"),",
+		],
+		"description": "GestureDetector(),",
+	},
+
+	"Row": {
+		"prefix": [
+			"row",
+		],
+		"body": [
+			"Row(",
+			"\tmainAxisAlignment:MainAxisAlignment.spaceBetween,",
+			"\tchildren:<Widget>[",
+			"\t\t$1",
+			"],",
+			"),",
+		],
+		"description": "Row(children:[]),",
+	},
+
+	"Column": {
+		"prefix": [
+			"col",
+			"column",
+		],
+		"body": [
+			"Column(",
+			"\tcrossAxisAlignment:CrossAxisAlignment.start,",
+			"\tchildren:<Widget>[",
+			"\t\t$1",
+			"],",
+			"),",
+		],
+		"description": "Column(children:[]),",
+	},
+
+	"Icon": {
+		"prefix": [
+			"icon",
+		],
+		"body": [
+			"Icon(",
+			"\tIcons.$1,",
+			"\tsize:10,",
+			"),",
+			"$3",
+		],
+		"description": "Icon widget",
+	},
+	"Single Child Scroll View": {
+		"prefix": [
+			"singleChildScrollView",
+		],
+		"body": [
+			"SingleChildScrollView(",
+			"\tchild:$1",
+			"),",
+			"$2",
+		],
+		"description": "SingleChildScrollView(chid:Something()),",
+	},
+
+	//ANIMATION
+	"Animation Controller": {
+		"prefix": [
+			"animationController",
+		],
+		"body": [
+			"late final AnimationController _animationController ;",
+			"",
+			"@override",
+			"void initState() {",
+			"\tsuper.initState();",
+			"\t _animationController = AnimationController(",
+			"\t\tvsync: this,",
+			"\t\tduration:const Duration(milliseconds: 250),",
+			"\t);",
+			"\t",
+			"}",
+			"",
+			"@override",
+			"void dispose() {",
+			"\t_animationController.dispose();",
+			"\tsuper.dispose();",
+			"}",
+			"$1",
+		],
+		"description": "Create full animation method",
+	},
+	"Tween": {
+		"prefix": [
+			"tween",
+		],
+		"body": [
+			"Tween<$1>(",
+			"begin: $2,",
+			"end: $3,",
+			"),",
+			"$4",
+		],
+		"description": "Tween begin and end",
+	},
+
+
+	"Tween Animation Builder": {
+		"prefix": [
+			"tweenAnimationBuilder",
+		],
+		"body": [
+			"TweenAnimationBuilder<${1:type}>(",
+			"\ttween: Tween<$1>(begin: 0.0, end: 1),",
+			"\tcurve: Curves.fastOutSlowIn,",
+			"\tduration: const Duration(milliseconds: 750),",
+			"\tbuilder: (BuildContext context, $1? value, Widget? child) {",
+			"\t\treturn $2Container();",
+			"\t},",
+			"),",
+		],
+		"description": "Create full tween animation builder ",
+	},
+
+  //PROVIDER TEMPLATE WITH STATE
+	"Provider template": {
+		"prefix": "templateprovider",
+		"body": [
+			"import 'package:flutter/foundation.dart';",
+			"",
+			"enum $1State {empty,loading, loaded, success, error } ",
+			"",
+			"class $1Provider with ChangeNotifier {",
+			"",
+			"",
+			"$1State state = $1State.empty;",
+			"String errMessage  = '';",
+			"",
+			"",
+			"",
+			"",
+			"void _handleEmpty() {",
+			"\tstate = $1State.empty;",
+			"\terrMessage = '';",
+			"\tnotifyListeners();",
+			"}",
+			"",
+			"void _handleLoading() {",
+			"\tstate = $1State.loading;",
+			"\terrMessage = '';",
+			"\tnotifyListeners();",
+			"}",
+			"",
+			"void _handleLoaded() {",
+			"\tstate = $1State.loaded;",
+			"\terrMessage = '';",
+			"\tnotifyListeners();",
+			"}",
+			"",
+			"void _handleSuccess() {",
+			"\tstate = $1State.success;",
+			"\terrMessage = '';",
+			"\tnotifyListeners();",
+			"}",
+			"",
+			"void _handleError( e) {",
+			"\tstate = $1State.error;",
+			"\terrMessage = e.toString();",
+			"\tnotifyListeners();",
+			"}",
+			"",
+			"}",
+		],
+		"description": "Creates Provider template"
+	},
+
+	"unitTest": {
+		"prefix": "utest",
+		"body": [
+			"test('$1' , () {",
+			"\t //Arrange",
+			"$2",
+			"\t //Act",
+			"$3",
+			"\t //Assert",
+			"$4",
+			"});",
+		],
+		"description": "test('something', () {});"
+	},
+}

@@ -22,6 +22,8 @@ Combined animations [Go](/Animations/Combined%20Animations/)
 
 ### Code Snippets
 
+Custom Flutter Snippets For Vscode [Go](/Code%20Snippets/Vscode%20Snippets/)
+
 Basics of form validation [Go](/Code%20Snippets/Form%20Validation)
 
 Basics of future builder [Go](/Code%20Snippets/Future%20Builder)
