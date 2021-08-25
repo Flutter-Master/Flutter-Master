@@ -10,6 +10,8 @@ Nike Store [Go](/Reels/nike_store/)
 
 Travel App [Go](/Reels/travel_app/)
 
+Solar system App [Go](/Reels/solar_system/)
+
 ### Animations
 
 Implicit animations [Go](/Animations/Implicit%20Animations)
