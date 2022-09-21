@@ -12,6 +12,12 @@ Travel App [Go](/Reels/travel_app/)
 
 Solar system App [Go](/Reels/solar_system/)
 
+### UI Builds
+
+Login Screen Finance App [Go](/UI/Finance/login_screen.dart)
+
+Register Screen 1 Finance App [Go](/UI/Finance/register_screen_1.dart)
+
 ### Animations
 
 Implicit animations [Go](/Animations/Implicit%20Animations)
