@@ -50,6 +50,8 @@ Basics of BackdropFilter [Go](/Code%20Snippets/Backdrop%20Filter)
 
 Basics of OrientationBuilder [Go](/Code%20Snippets/Orientation%20Builder)
 
+Basics of Snackbar [Go](/Code%20Snippets/Snackbar)
+
 ### Dart
 
 Extension methods [Go](/Dart/Extension%20Methods)
