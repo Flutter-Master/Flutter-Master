@@ -18,6 +18,8 @@ Login Screen Finance App [Go](/UI/Finance/login_screen.dart)
 
 Register Screen 1 Finance App [Go](/UI/Finance/register_screen_1.dart)
 
+Animated Page View [Go](/UI/Animated-PageView/)
+
 ### Animations
 
 Implicit animations [Go](/Animations/Implicit%20Animations)
